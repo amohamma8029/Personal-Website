@@ -1,9 +1,9 @@
 /* custom css variables */
 
 :root{
-    --green-highlight: #00BE9D;
-    --off-black: #404040;
-    --dark-gray: #353535; 
+    --LT-GRN: #00BE9D;
+    --DARK-GRAY: #2D2D2D;
+    --DARKER-GRAY: #222222; 
 }
 
 *,
@@ -12,57 +12,71 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 50px;
+body{
+    margin: 0;
+    background-color: var(--DARK-GRAY);
+    color: white;
     font-family: Inter, sans-serif;
-    background-color: var(--off-black);
 }
 
-.main-container {
+.content-wrapper{
     display: flex;
     justify-content: center;
-    gap: 25px;
-    height: 95vh;
-    width: 100%;
+    gap: 60px;
+    height: 100vh;
 }
 
-.text-container {
-    color: white;
-    background-color: var(--dark-gray);
+.img-container{
+    padding: 25px;
+    background-color: var(--DARKER-GRAY);
+    height: inherit;
 }
 
-.text-container h1 {
-    font-size: 64px;
-    text-align: center;
-}
-
-.text-wrapper {
-    padding: 62px 121px 62px 122px;
-}
-
-.text-container.text {
-    font-size: 24px;
-    line-height: 29.05px;
-    width: 496px;
-}
-
-.text-container summary {
-    font-size: 32px;
-}
-
-.text-container.hi-light{
-    color: var(--green-highlight);
-}
-
-.image-container.child {
+.img-container.child{
     width: auto;
-    height: 95vh;
+    height: 100%;
     object-fit: cover;
+    margin: 0;
+    padding: 0;
 }
 
-footer {
-    margin-top: 50px;
-    text-align: center;
-    color: white;
-    font-size: 24px;
+.txt-wrapper{
+    display: flex;
+    align-items: center;
+    padding: 35px 100px 35px 99px;
+}
+
+.txt-container{
+    
+    width: 653px;
+}
+
+.txt-container.head{
+    font-size: 4.688rem;
+    margin: 0;
+}
+
+.txt-container.flair{
+    font-size: 1.438rem;
+    font-weight: 500;
+}
+
+.txt-container.norm{
+    font-size: 1.688rem;
+    font-weight: 600;
+}
+
+.cpyrght{
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: 35px;
+}
+
+.grn-highlight{
+    color: var(--LT-GRN);
+}
+
+.grn-highlight.bold{
+    font-weight: 800;
+    color: var(--LT-GRN);
 }
