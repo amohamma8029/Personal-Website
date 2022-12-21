@@ -5,52 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayman Mohammad</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="documentation & assests/styles/website.css">
 
     <!-- importing google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sea_foam: '#00BE9D',
+                        drk_gray: '#2D2D2D',
+                        off_black: '#222222',
+                    },
+                },
+            },
+        }
+    </script>
 </head>
 
-<body>
+<body class="bg-drk_gray text-white">
 
-    <div class="content-wrapper">
+    <section class="main-section">
 
-        <div class="img-container">
-            <img class="img-container child" src="images/Me.jpg" alt="A picture of myself.">
-        </div>
+        <div class="content-container flex flex-col xl:flex-row xl:items-center">
 
-        <!-- end of img container-->
-        
-        <div class="txt-wrapper">
-            <div class="txt-container">
+            <div class="img-wrapper p-[25px] bg-off_black lg:p-[50px] lg:h-[1020px] xl:p-[25px] xl:h-screen xl:w-[55%]">
+                <img class="object-cover lg:w-full lg:h-full xl:h-full xl:w-full" src="documentation & assests/images/Me.jpg" alt="A picture of myself.">
+            </div>
 
-                <h1 class="txt-container head">Hi, I'm <span class="grn-highlight bold">[AYMAN]</span>.</h1>
-        
-                <p class="txt-container flair">
-                    <em>I like to code... I guess...</em>
+            <div class="txt-container p-8 lg:p-16 xl:p-6">
+                <h1 class="text-4xl md:text-7xl lg:text-7xl 2xl:text-8xl">Hi, I'm <span class="font-bold text-sea_foam">[AYMAN]</span>.</h1>
+
+                <br>
+
+                <p class="italic md:text-3xl md:mt-6 lg:text-4xl xl:text-2xl">
+                    I like to code... I guess...
                 </p>
-        
-                <p class="txt-container norm">
+
+                <br>
+
+                <p class="font-semibold md:text-4xl md:mt-6 lg:w-11/12 xl:text-2xl">
                     Currently, I'm a second-year Computer Science student @ Toronto Metropolitan University (TMU).
                     <br><br>
                     I've always been deeply passionate about technology as a whole, and always seek any opportunities to learn more. 
                     <br><br>
-                    If you'd like to see what I've been up to, check out my <a href="" class="grn-highlight">[GITHUB]</a>. 
-                    For an overview of my skills and experience, please view my <a href="" class="grn-highlight">[RESUME]</a>.
+                    If you'd like to see what I've been up to, check out my <a href="" class="text-sea_foam">[GITHUB]</a>. 
+                    For an overview of my skills and experience, please view my <a href="" class="text-sea_foam">[RESUME]</a>.
                     <br><br>
-                    Want to get in touch? You can reach me through <a href="" class="grn-highlight">[LINKEDIN]</a>
-                    or <a href="" class="grn-highlight">[EMAIL]</a>.
+                    Want to get in touch? You can reach me through <a href="" class="text-sea_foam">[LINKEDIN]</a>
+                    or <a href="" class="text-sea_foam">[EMAIL]</a>.
                 </p>
-        
-                <p class="cpyrght">© 2022 Ayman Mohammad.</p>
+
+                <br>
+
+                <p class="font-black md:text-3xl md:mt-6">© 2022 Ayman Mohammad.</p>
             </div>
-    
-            <!-- end of txt container-->
+
         </div>
 
-    </div>
+    </section>
 
     <script src="main.js"></script>
 </body>
