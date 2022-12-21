@@ -4,5 +4,5 @@
 # TOOLS
 (note: this section is still incomplete)
 
- - Created with: `HTML`, `Tailwind CSS`, `Javascript [using the anime.js library]`
+ - Created with: `HTML`, `CSS [tailwind css]`, `Javascript [using the anime.js library]`
  - Hosted on: `Cloudflare`
