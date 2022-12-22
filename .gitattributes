@@ -1,1 +1,2 @@
-documentation/* linguist-documentation
+documentation/assets/js/main.js -linguist-detectable
+documentation/assets/styles/website.css -linguist-detectable
